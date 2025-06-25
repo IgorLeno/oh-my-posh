@@ -16,7 +16,7 @@
             "style": "full"
           },
           "style": "plain",
-          "template": " in {{ .Path }} ",
+          "template": "{{ .Path }} ",
           "type": "path"
         },
         {
