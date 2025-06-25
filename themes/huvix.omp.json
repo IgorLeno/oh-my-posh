@@ -12,8 +12,11 @@
         },
         {
           "foreground": "#56B6C2",
+          "properties": {
+            "style": "full"
+          },
           "style": "plain",
-          "template": " {{ .Path }} ",
+          "template": " in {{ .Path }} ",
           "type": "path"
         },
         {
