@@ -34,14 +34,11 @@
         {
           "foreground": "#E8CC97",
           "properties": {
-            "branch_icon": "",
-            "display_status": true,
-            "display_stash_count": true,
-            "display_upstream_icon": true,
-            "display_status_icon": true
+            "branch_icon": "\ue0a0 ",
+            "fetch_status": true
           },
           "style": "plain",
-          "template": "git({{ .HEAD }}{{ if .Working.Changed }} ✚{{ end }}{{ if .Staging.Changed }} ●{{ end }})",
+          "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}",
           "type": "git"
         },
         {
@@ -60,5 +57,5 @@
     }
   ],
   "final_space": true,
-  "version": 4
+  "version": 3
 }
