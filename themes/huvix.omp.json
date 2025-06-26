@@ -37,7 +37,7 @@
             "branch_icon": ""
           },
           "style": "plain",
-          "template": "<#E8CC97>git(</>{{ .HEAD }}<#E8CC97>) </>",
+          "template": "<#E8CC97>git(</>{{ .HEAD }}{{ if .Context }} {{ .Context }}{{ end }}<#E8CC97>) </>",
           "type": "git"
         },
         {
